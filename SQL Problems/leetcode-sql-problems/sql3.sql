@@ -8,7 +8,7 @@ HAVING COUNT(email) > 1;
 
 
 
--- ********** In my github problem Number: 3 | Leetcode Problem 182: Employees Earning More Than Their Managers **********
+-- ********** In my github problem Number: 3 | Leetcode Problem 182: Duplicate Emails **********
 
 -- Table: Person
 
