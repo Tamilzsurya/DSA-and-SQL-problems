@@ -9,6 +9,13 @@ WHERE id NOT IN (
     
 ) ;
 
+--solution 2
+DELETE p1
+FROM person p1
+JOIN person p2
+ON p1.email = p2.email
+AND p1.id > p2.id;
+
 
 -- ********** In my github problem Number: 5 | Leetcode Problem 196: Delete Duplicate Emails **********
 
