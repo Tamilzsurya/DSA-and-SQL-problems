@@ -1,3 +1,23 @@
+
+-- solution 1: it is solve this question => Follow up: What if more than one customer has the 
+-- largest number of orders, can you find all the customer_number in this case?
+
+SELECT
+    customer_number
+FROM orders
+GROUP BY customer_number
+HAVING COUNT(*) = (
+    SELECT 
+        MAX(order_count)
+    FROM (
+        SELECT 
+            COUNT(*) AS order_count
+        FROM orders
+        GROUP BY customer_number
+    ) t
+);
+
+--solution 2
 SELECT 
     t1.customer_number
 FROM (
