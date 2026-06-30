@@ -10,7 +10,7 @@ HAVING SUM(company.name = "RED" ) = 0 OR SUM(company.name IS NULL) > 0
 ;
 
 
-********** In my github problem Number: 15 | Leetcode Problem 607. Sales Person**********
+-- ********** In my github problem Number: 15 | Leetcode Problem 607. Sales Person**********
 
 -- Table: SalesPerson
 
